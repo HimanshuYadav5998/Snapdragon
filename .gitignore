@@ -1,67 +1,62 @@
-# .gitignore for SnapSense AI
-
-# Python
+# ─── Python ─────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyd
 *.pyo
 *.pdb
-.Python
 build/
 dist/
 *.egg-info/
 .eggs/
 
-# Virtual environments
+# ─── Virtual environments ────────────────────────────────────────────────────
 venv/
 .venv/
 env/
 .env
 
-# AI Models (too large for git)
+# ─── AI Models (too large for git) ──────────────────────────────────────────
 models/whisper/
 models/mobilenet/
 models/clip/
-models/mistral/*.gguf
-models/mistral/*.bin
+models/mistral/
 *.gguf
 *.ggml
 *.pt
 *.pth
 *.onnx
 *.tflite
+*.bin
 
-# Environment files
+# ─── Submission files (upload directly to Unstop) ───────────────────────────
+submission/
+
+# ─── Secrets / Environment ──────────────────────────────────────────────────
 .env
 .env.local
-.env.*.local
 *.env
+.qai_hub/
 
-# IDE
+# ─── IDE ────────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# OS
+# ─── OS ─────────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Logs
+# ─── Logs & temp ────────────────────────────────────────────────────────────
 *.log
 logs/
-
-# Temporary files
 *.tmp
 *.temp
 temp/
 tmp/
 
-# Gradio
+# ─── Gradio ─────────────────────────────────────────────────────────────────
 gradio_cached_examples/
 flagged/
-
-# Qualcomm AI Hub cache
-.qai_hub/
