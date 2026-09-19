@@ -1,0 +1,39 @@
+# SnapSense AI — Python Dependencies
+# Optimized for Snapdragon X Elite on Windows 11 ARM64
+
+# ── Qualcomm AI Hub ─────────────────────────────────────────
+qai_hub>=0.20.0
+qai_hub_models>=0.20.0
+
+# ── Core ML / Inference ─────────────────────────────────────
+onnxruntime>=1.18.0           # ONNX Runtime (QNN EP for Snapdragon NPU)
+numpy>=1.26.0
+torch>=2.3.0                  # PyTorch (for model loading/export)
+torchaudio>=2.3.0             # For audio processing
+torchvision>=0.18.0           # For image preprocessing
+
+# ── Voice / ASR ─────────────────────────────────────────────
+openai-whisper>=20240930      # Whisper model (exported to Qualcomm AI Hub)
+sounddevice>=0.4.6            # Microphone capture
+soundfile>=0.12.1             # Audio file I/O
+scipy>=1.13.0                 # Signal processing
+
+# ── Vision ──────────────────────────────────────────────────
+Pillow>=10.3.0                # Image I/O
+opencv-python>=4.9.0          # Computer vision utilities
+transformers>=4.42.0          # CLIP model tokenizer / processor
+
+# ── NLP / LLM ───────────────────────────────────────────────
+llama-cpp-python>=0.2.80      # LLaMA/Mistral inference (GGUF format)
+tiktoken>=0.7.0               # Tokenizer
+sentencepiece>=0.2.0
+
+# ── UI ──────────────────────────────────────────────────────
+gradio>=4.40.0                # Web UI
+rich>=13.7.0                  # CLI output formatting
+
+# ── Utilities ───────────────────────────────────────────────
+python-dotenv>=1.0.0          # Environment variables
+tqdm>=4.66.0                  # Progress bars
+requests>=2.32.0              # HTTP client (model download only)
+pydantic>=2.7.0

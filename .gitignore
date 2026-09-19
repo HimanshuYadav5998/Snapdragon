@@ -1,0 +1,67 @@
+# .gitignore for SnapSense AI
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+*.pdb
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# AI Models (too large for git)
+models/whisper/
+models/mobilenet/
+models/clip/
+models/mistral/*.gguf
+models/mistral/*.bin
+*.gguf
+*.ggml
+*.pt
+*.pth
+*.onnx
+*.tflite
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Gradio
+gradio_cached_examples/
+flagged/
+
+# Qualcomm AI Hub cache
+.qai_hub/
